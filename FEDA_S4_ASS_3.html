@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>using __proto__</title>
+	</head>
+	<body>
+		<div></div>
+	</body>
+	<script type="text/javascript">
+		var animal = { eats: "Grass" };
+		var rabbit = { jumps: "Yes" };
+		rabbit.__proto__ = animal;
+		document.write('animal as parent<br>');
+		document.write('Animal eats: ' + animal.eats + '<br><br>');
+		document.write('rabbit inherited animal<br>');
+		document.write('Rabbit eats: ' + rabbit.eats + '<br>');
+		document.write('Rabbit jumps: ' + rabbit.jumps + '<br>');
+	</script>
+</html>
